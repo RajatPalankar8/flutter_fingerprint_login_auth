@@ -34,6 +34,8 @@ class _AuthPathState extends State<AuthPath> {
 
   Future<void> _getAuth() async{
     bool isAuth = false;
+
+    //loaded a dialog to scan fingerprint
     try{
       isAuth = await authentication.authenticate(
           localizedReason: 'Scan your finger print to access the app',
