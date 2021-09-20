@@ -63,6 +63,7 @@ class _AuthPathState extends State<AuthPath> {
     // TODO: implement initState
     super.initState();
 
+     // call method immediately when app launch
     _checkBio();
   }
 
