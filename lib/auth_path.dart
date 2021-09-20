@@ -44,6 +44,9 @@ class _AuthPathState extends State<AuthPath> {
         stickyAuth: true
       );
 
+      //if fingerprint scan match then
+      //isAuth = true
+      // therefore will navigate user to WelcomePage/HomePage of the App
       if(isAuth){
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (builder)=>HomePage()));
       }
